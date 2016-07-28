@@ -27,6 +27,11 @@ app.get('/cities', function(req,res){
 app.post('/cities', urlencode, function(req, res){
   // retrieve data from the form
   var newCity = req.body;
+
+  if(!newCity.name || !newCity.description){
+    res.sendStatus(400);
+    return false;
+  }
   // create data in db
   client.hset('cities', newCity.name, newCity.description, function(error){
     if(error) throw error;

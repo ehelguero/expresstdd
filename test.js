@@ -60,6 +60,13 @@ describe('Creating new cities', function(){
     .post('/cities')
     .send('name=Springfield&description=where+the+simpon+lives')
     .expect(/springfield/i, done);
+  });
+
+  it('Should validate name and desciption', function(done){
+    request(app)
+    .post('/cities')
+    .send('name=&description=')
+    .expect(400,done);
   })
 });
 
