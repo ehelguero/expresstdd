@@ -17,6 +17,11 @@
       "from": "async@>=1.4.0 <2.0.0",
       "resolved": "https://registry.npmjs.org/async/-/async-1.5.2.tgz"
     },
+    "bindings": {
+      "version": "1.2.1",
+      "from": "bindings@>=1.2.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz"
+    },
     "body-parser": {
       "version": "1.15.2",
       "from": "body-parser@*",
@@ -97,6 +102,11 @@
       "from": "diff@1.4.0",
       "resolved": "https://registry.npmjs.org/diff/-/diff-1.4.0.tgz"
     },
+    "double-ended-queue": {
+      "version": "2.1.0-0",
+      "from": "double-ended-queue@>=2.1.0-0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/double-ended-queue/-/double-ended-queue-2.1.0-0.tgz"
+    },
     "ee-first": {
       "version": "1.1.1",
       "from": "ee-first@1.1.1",
@@ -166,6 +176,11 @@
       "version": "1.9.2",
       "from": "growl@1.9.2",
       "resolved": "https://registry.npmjs.org/growl/-/growl-1.9.2.tgz"
+    },
+    "hiredis": {
+      "version": "0.5.0",
+      "from": "hiredis@*",
+      "resolved": "https://registry.npmjs.org/hiredis/-/hiredis-0.5.0.tgz"
     },
     "http-errors": {
       "version": "1.5.0",
@@ -264,6 +279,11 @@
       "from": "ms@0.7.1",
       "resolved": "https://registry.npmjs.org/ms/-/ms-0.7.1.tgz"
     },
+    "nan": {
+      "version": "2.4.0",
+      "from": "nan@>=2.3.4 <3.0.0",
+      "resolved": "https://registry.npmjs.org/nan/-/nan-2.4.0.tgz"
+    },
     "negotiator": {
       "version": "0.6.1",
       "from": "negotiator@0.6.1",
@@ -308,6 +328,21 @@
       "version": "1.0.27-1",
       "from": "readable-stream@1.0.27-1",
       "resolved": "https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.27-1.tgz"
+    },
+    "redis": {
+      "version": "2.6.2",
+      "from": "redis@*",
+      "resolved": "https://registry.npmjs.org/redis/-/redis-2.6.2.tgz"
+    },
+    "redis-commands": {
+      "version": "1.2.0",
+      "from": "redis-commands@>=1.2.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/redis-commands/-/redis-commands-1.2.0.tgz"
+    },
+    "redis-parser": {
+      "version": "2.0.4",
+      "from": "redis-parser@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/redis-parser/-/redis-parser-2.0.4.tgz"
     },
     "reduce-component": {
       "version": "1.0.1",
