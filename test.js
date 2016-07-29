@@ -85,3 +85,31 @@ describe('Deleting cities', function(){
       .expect(204, done);
   });
 });
+
+describe('Shows city info', function(){
+  before(function(){
+    client.hset('cities', 'Banana', 'a city guay');
+  })
+
+  after(function(){
+    client.flushdb();
+  })
+
+  it('Should return 200 status code', function(done){
+    request(app)
+    .get('/cities/Banana')
+    .expect(200, done);
+  });
+
+  it('Should return Content-Type HTML format', function(done){
+    request(app)
+    .get('/cities/Banana')
+    .expect('Content-Type', /html/, done);
+  });
+
+  it('Should return info about given city', function(done){
+    request(app)
+    .get('/cities/Banana')
+    .expect(/guay/, done);
+  });
+});
